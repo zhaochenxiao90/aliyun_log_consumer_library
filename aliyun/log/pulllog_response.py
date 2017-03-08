@@ -4,6 +4,7 @@
 # Copyright (C) Alibaba Cloud Computing
 # All rights reserved.
 
+from aliyun.log.logexception import LogException
 from aliyun.log.util import Util
 from logresponse import LogResponse
 from log_logs_pb2 import LogGroup
