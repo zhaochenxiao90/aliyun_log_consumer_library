@@ -28,7 +28,7 @@ class LoghubHeartBeat(Thread):
                 self.mloghub_client_adapter.heartbeat(shards, mheld_shards)
                 self.mheld_shards = mheld_shards
                 self.mheart_shards = self.mheld_shards[:]
-                time.sleep(self.heartbeat_interval)
+                time.sleep(self.heartbeat_interval/2)
             except Exception as e:
                 print e
 
